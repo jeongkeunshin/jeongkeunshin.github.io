@@ -1,4 +1,4 @@
-My name is Jeongkeun Shin, PhD student at CMU ECE
-This page is under construction.
+This website is built based on
 
-Here is my [CV](/files/jeongkes_CV.pdf)
+https://github.com/Maclinz/JS_CSS_PortfolioProject
+https://www.youtube.com/watch?v=xV7S8BhIeBo&t=1058s
