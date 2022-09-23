@@ -48,6 +48,18 @@ a {
   text-decoration: none;
   color: inherit;
   font-family: inherit;
+  word-break:break-all;
+  white-space:nowrap;
+}
+
+.mylinks {
+  color: #1E90FF;
+  word-break:break-all;
+  white-space:nowrap;
+    overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  word-break: break-word;
 }
 
 header {
@@ -99,7 +111,6 @@ section {
 
 .carnegie-red {
   color: #ab1727;
-  text-decoration: underline;
 }
 
 .controls {
