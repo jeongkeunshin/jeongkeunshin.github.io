@@ -26,3 +26,7 @@ a:link, a:visited {
 .pubTitle {
 	text-decoration: underline;
 }
+
+.myname {
+	color: #66CDAA;
+}
