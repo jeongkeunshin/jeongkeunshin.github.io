@@ -4,7 +4,8 @@ html, body {
 }
 
 .mainbox {
-	width: 650px;
+	width: 100%;
+	max-width: 650px;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: Calibri;
