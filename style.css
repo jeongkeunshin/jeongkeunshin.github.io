@@ -193,10 +193,11 @@ a:hover{
 /* ====== Publications ====== */
 .pub{
   display: grid;
-  grid-template-columns: 58px 1fr;
+  grid-template-columns: 58px 1fr auto;
   gap: 12px;
   padding: 14px 0;
   border-top: 1px solid var(--border);
+  align-items: start;
 }
 .pub:first-of-type{
   border-top: 0;
@@ -233,16 +234,25 @@ a:hover{
   font-weight: 800;
 }
 
+.pub__links{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 1px;
+  min-width: 100px;
+}
+
 .pub__link{
-  margin-left: 8px;
+  display: block;
   font-size: 13px;
   font-weight: 700;
-  padding: 4px 8px;
+  padding: 4px 10px;
   border-radius: 999px;
   border: 1px solid rgba(31, 74, 168, 0.18);
   background: rgba(31, 74, 168, 0.06);
   text-decoration: none;
   white-space: nowrap;
+  text-align: center;
 }
 .pub__link:hover{
   text-decoration: none;
@@ -260,6 +270,14 @@ a:hover{
   color: var(--muted);
   margin-left: 8px;
   font-weight: 650;
+}
+
+.pub__links .pill{
+  display: block;
+  margin-left: 0;
+  text-align: center;
+  padding: 4px 10px;
+  font-size: 13px;
 }
 
 .award{
@@ -301,6 +319,6 @@ a:hover{
     font-size: 30px;
   }
   .pub{
-    grid-template-columns: 52px 1fr;
+    grid-template-columns: 52px 1fr auto;
   }
 }
