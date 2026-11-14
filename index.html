@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="11tmB40XY-KqGrLKbeoY3RqUpC4g8zoaPQbYmp8FUDE" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jeongkeun Shin is a Ph.D. student in Societal Computing at Carnegie Mellon University who builds simulations to help organizations choose cyber defenses that fit their people, systems, and budget." />
+  <meta name="keywords" content="Jeongkeun Shin, CMU, Cybersecurity, Simulation, CASOS" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=12" />
+  <title>Jeongkeun Shin · Carnegie Mellon University</title>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__name" href="#top">Jeongkeun Shin</a>
+      <nav class="topbar__nav" aria-label="Sections">
+        <a href="#research">Research</a>
+        <a href="#journals">Journals</a>
+        <a href="#conferences">Conferences</a>
+        <a href="#posters">Posters</a>
+        <a href="#reports">Reports</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="page" id="top">
+
+    <!-- ===== HERO ===== -->
+    <header class="hero">
+      <div class="hero__inner">
+        <h1 class="hero__name">Jeongkeun Shin</h1>
+        <p class="hero__role">Ph.D. student in Societal Computing · Carnegie Mellon University</p>
+
+        <p class="hero__lede">
+          I build simulations that help organizations decide which cyber defenses
+          to invest in. Good defensive tools already exist. The hard part is choosing
+          the combination that fits one organization's people, systems, and budget,
+          so I model attackers, defenders, and employees together and judge a defense
+          by the damage the organization actually sustains.
+        </p>
+
+        <dl class="hero__facts">
+          <dt>Email</dt>
+          <dd>jeongkes <span class="at">at</span> cs <span class="at">dot</span> cmu <span class="at">dot</span> edu</dd>
+          <dt>From</dt>
+          <dd><a href="https://www.youtube.com/watch?v=qBvJf8jZ6kg" target="_blank" rel="noreferrer">Ulsan, South Korea</a></dd>
+        </dl>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="etc/jeongkes-CV-F26-V1.pdf" target="_blank" rel="noreferrer">CV</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=-2gabhwAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+        </div>
+      </div>
+
+      <div class="hero__portrait">
+        <img src="img/profile.png" alt="Portrait of Jeongkeun Shin" />
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ===== RESEARCH ===== -->
+      <section class="section" id="research">
+        <div class="section__head">
+          <h2 class="section__title">Research</h2>
+        </div>
+
+        <p class="section__lede">
+          My thesis work, <em>Human-Centric Simulation for Organizational Cyber
+          Defense</em>, connects three questions: how real attacks unfold, which
+          defenses are worth their cost, and how the people inside an organization
+          change the outcome.
+        </p>
+
+        <div class="research-grid">
+          <article class="research-card">
+            <h3>Attack Flow Networks</h3>
+            <p>Real attacks are chains of techniques, not isolated events. I built the <em>Cyber Attack Flow Intelligence Network</em> from 1,031 public threat reports covering 170 MITRE ATT&amp;CK groups and 50 campaigns. It records which technique tends to follow which, so simulated attackers take routes seen in real incidents instead of hand-written scenarios.</p>
+          </article>
+          <article class="research-card">
+            <h3>Defense Optimization</h3>
+            <p>Given that network, which defenses cut the attacker off at the lowest cost? I answer this with minimum vertex cuts and budget-constrained interdiction, and I test the resulting plans against attackers who adapt and persist. The best plan depends on the budget: with ample funds, technical controls that disrupt post-intrusion activity; with tight ones, employee training and blocking initial malware execution.</p>
+          </article>
+          <article class="research-card">
+            <h3>Human-Centric Simulation</h3>
+            <p><em>OSIRIS</em> is an agent-based model of an organization whose employees differ in phishing susceptibility, fatigue, emotion, and social ties. It shows how people change what a defense delivers. In one study, the most accurate intrusion detector allowed more data theft than three less accurate ones, because it never monitored the techniques on the attacker's path.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== JOURNALS ===== -->
+      <section class="section" id="journals">
+        <div class="section__head">
+          <h2 class="section__title">Journal Papers</h2>
+        </div>
+
+        <ol class="pub-list">
+
+          <li class="pub">
+            <span class="pub__id">J.4</span>
+            <div class="pub__body">
+              <h3 class="pub__title">When Susceptibility Meets Centrality: Structural Placement Alters the Relative Performance of Targeted Phishing Training</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, L. Richard Carley, Kathleen M. Carley</p>
+            </div>
+            <div class="pub__links">
+              <span class="pill">Under review</span>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">J.3</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Cyber Attack Flow Intelligence Network: Backbone Analysis and Defense Strategy Optimization</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="IEEE Transactions on Network Science and Engineering">IEEE TNSE</abbr> 2026</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://ieeexplore.ieee.org/document/11419882" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">J.2</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Simulating Trust Dynamics Model for Interaction between Human and Intrusion Detection System under Hybrid Denial-of-Service and Spearphishing Campaigns</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="Simulation: Transactions of the Society for Modeling and Simulation International">SIMULATION</abbr> 2026</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://journals.sagepub.com/doi/10.1177/00375497261490937" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">J.1</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Simulating Cyber Defense: The Impact of Phishing Training and System Updates on Mitigating Damage from Hybrid Phishing and Watering Hole Attacks</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Siyuan Zhai, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="The Journal of Defense Modeling and Simulation">JDMS</abbr> 2025</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://journals.sagepub.com/doi/10.1177/15485129251365259" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ===== CONFERENCES ===== -->
+      <section class="section" id="conferences">
+        <div class="section__head">
+          <h2 class="section__title">Conference Proceedings</h2>
+        </div>
+
+        <ol class="pub-list">
+
+          <li class="pub">
+            <span class="pub__id">C.14</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Network-Based Cost-Aware Optimization of Ransomware Mitigation Strategies</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="International Conference on Social Computing, Behavioral-Cultural Modeling &amp; Prediction and Behavior Representation in Modeling and Simulation">SBP-BRiMS</abbr> 2026</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://link.springer.com/chapter/10.1007/978-3-032-40581-4_15" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.13</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Network-Based Defense Optimization Against Ransomware Campaigns</h3>
+              <p class="pub__authors">Cathy Y. Wang, <span class="me">Jeongkeun Shin</span>, Siyuan Zhai, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="International Conference on Social Computing, Behavioral-Cultural Modeling &amp; Prediction and Behavior Representation in Modeling and Simulation">SBP-BRiMS</abbr> 2026</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://link.springer.com/chapter/10.1007/978-3-032-40581-4_14" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.12</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Simulation-Based Evaluation of IDS Monitoring Strategies for Denial-of-Service Defense Using Attack Flow Analysis</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="Winter Simulation Conference">WSC</abbr> 2026</p>
+            </div>
+            <div class="pub__links">
+              <span class="pill">Forthcoming</span>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.11</span>
+            <div class="pub__body">
+              <h3 class="pub__title">The Illusion of Optimal Defense: Static Interdiction under Adaptive and Persistent Attackers</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Siyuan Zhai, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="AAAI Summer Symposium: Human-Aware AI Agents for the Cyber Battlefield: From Human Models to Autonomous Defense Track">AAAI Summer Symposium</abbr> 2026</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://ojs.aaai.org/index.php/AAAI-SS/article/view/42948/50508" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.10</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Towards Real-time Cyber Warfare Simulation: A High-efficiency Heuristic for Budget-constrained Attack Interdiction</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="Annual Modeling and Simulation Conference">ANNSIM</abbr> 2026</p>
+            </div>
+            <div class="pub__links">
+              <span class="pill">Forthcoming</span>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.9</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Network Analysis of Attack Flows in Ransomware Groups and Campaigns</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Siyuan Zhai, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="International Conference on Social Computing, Behavioral-Cultural Modeling &amp; Prediction and Behavior Representation in Modeling and Simulation">SBP-BRiMS</abbr> 2025</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://link.springer.com/chapter/10.1007/978-3-032-07715-8_7" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.8</span>
+            <div class="pub__body">
+              <h3 class="pub__title">A Baseline Simulation of Hybrid Misinformation and Spearphishing Campaigns in Organizational Networks</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Han Wang, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="Winter Simulation Conference">WSC</abbr> 2025</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://ieeexplore.ieee.org/document/11338920" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.7</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Simulation of Human Organizations with Computational Human Factors Against Phishing Campaigns</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="International Conference on Cyber Warfare and Security">ICCWS</abbr> 2025</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://papers.academic-conferences.org/index.php/iccws/article/view/3241/3019" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.6</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Design, Modeling and Simulation of Cybercriminal Personality-based Cyberattack Campaigns</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Geoffrey B. Dobson, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="Winter Simulation Conference">WSC</abbr> 2024</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10838743" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.5</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Simulation-Based Study on False Alarms in Intrusion Detection Systems for Organizations Facing Dual Phishing and DoS Attacks</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="Annual Modeling and Simulation Conference">ANNSIM</abbr> 2024 <span class="award">Best Paper Runner-Up</span></p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://ieeexplore.ieee.org/abstract/document/10732653" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.4</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Integrating Human Factors into Agent-Based Simulation for Dynamic Phishing Susceptibility</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Kathleen M. Carley, L. Richard Carley</p>
+              <p class="pub__venue"><abbr title="International Conference on Social Computing, Behavioral-Cultural Modeling &amp; Prediction and Behavior Representation in Modeling and Simulation">SBP-BRiMS</abbr> 2023</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://link.springer.com/chapter/10.1007/978-3-031-43129-6_17" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.3</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Beyond Accuracy: Cybersecurity Resilience Evaluation of Intrusion Detection System against DoS Attacks using Agent-based Simulation</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Geoffrey B. Dobson, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="Winter Simulation Conference">WSC</abbr> 2023</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://ieeexplore.ieee.org/abstract/document/10408211" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.2</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Modeling and Simulation of the Human Firewall against Phishing Attacks in Small and Medium-sized Businesses</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Geoffrey B. Dobson, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="Annual Modeling and Simulation Conference">ANNSIM</abbr> 2023</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10155371" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">C.1</span>
+            <div class="pub__body">
+              <h3 class="pub__title">OSIRIS: Organization Simulation in Response to Intrusion Strategies</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Geoffrey B. Dobson, Kathleen M. Carley, L. Richard Carley</p>
+              <p class="pub__venue"><abbr title="International Conference on Social Computing, Behavioral-Cultural Modeling &amp; Prediction and Behavior Representation in Modeling and Simulation">SBP-BRiMS</abbr> 2022</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="https://link.springer.com/chapter/10.1007/978-3-031-17114-7_13" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ===== POSTERS ===== -->
+      <section class="section" id="posters">
+        <div class="section__head">
+          <h2 class="section__title">Posters &amp; Extended Abstracts</h2>
+        </div>
+
+        <ol class="pub-list">
+
+          <li class="pub">
+            <span class="pub__id">P.5</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Emotion-Based Agent-based Modeling and Simulation of Hybrid Cyber Attack Scenarios</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Ellen Kim, Clarissa Chau, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="International Conference on Social Computing, Behavioral-Cultural Modeling &amp; Prediction and Behavior Representation in Modeling and Simulation">SBP-BRiMS</abbr> 2026 · Poster</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="pub/SBP_BRIMS_POSTER_2026.pdf" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">P.4</span>
+            <div class="pub__body">
+              <h3 class="pub__title">A Machine Learning Surrogate Approach for Scalable Design Optimization in Cybersecurity Simulation</h3>
+              <p class="pub__authors">Siyuan Zhai, <span class="me">Jeongkeun Shin</span>, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="International Conference on Social Computing, Behavioral-Cultural Modeling &amp; Prediction and Behavior Representation in Modeling and Simulation">SBP-BRiMS</abbr> 2025 · Poster</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="pub/SBP_BRIMS_POSTER_2025.pdf" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">P.3</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Impact of Operating System Updates on Cybercriminal Access Duration: A Simulation-Based Study</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Tanav Changal, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="Winter Simulation Conference">WSC</abbr> 2024 · Poster</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="pub/WSC2024_Poster_Shin_Changal_Carley_Carley.pdf" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">P.2</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Leveraging OSIRIS to Simulate Real-world Ransomware Attacks on Organization</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Geoffrey B. Dobson, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="Winter Simulation Conference">WSC</abbr> 2022 · Poster</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="pub/WSC2022_Poster_Shin_Dobson_Carley_Carley.pdf" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">P.1</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Finding Integers from Group Orbits</h3>
+              <p class="pub__authors"><span class="me">Jake Shin</span>, Yike Xu, Catherine Zhang, Xin Zhang, Junxian Li, Xin Zhang</p>
+              <p class="pub__venue"><abbr title="Illinois Geometry Lab">IGL</abbr> Open House, Spring 2017</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="pub/IGL_Brochure.pdf" target="_blank" rel="noreferrer">Brochure</a>
+              <a class="pub__link" href="pub/IGL_Poster.pdf" target="_blank" rel="noreferrer">Poster</a>
+              <a class="pub__link" href="pub/IGL_Final_Report.pdf" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ===== TECHNICAL REPORTS ===== -->
+      <section class="section" id="reports">
+        <div class="section__head">
+          <h2 class="section__title">Technical Reports</h2>
+        </div>
+
+        <ol class="pub-list">
+          <li class="pub">
+            <span class="pub__id">T.2</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Attack Flow Network Models of MITRE ATT&amp;CK Groups and Campaigns</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Siyuan Zhai, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="Center for Computational Analysis of Social and Organizational Systems">CASOS</abbr> Technical Report 2025</p>
+            </div>
+            <div class="pub__links">
+              <span class="pill">Forthcoming</span>
+            </div>
+          </li>
+
+          <li class="pub">
+            <span class="pub__id">T.1</span>
+            <div class="pub__body">
+              <h3 class="pub__title">Revelation of System and Human Vulnerabilities Across MITRE ATT&amp;CK Techniques with Insights from ChatGPT</h3>
+              <p class="pub__authors"><span class="me">Jeongkeun Shin</span>, Geoffrey B. Dobson, L. Richard Carley, Kathleen M. Carley</p>
+              <p class="pub__venue"><abbr title="Center for Computational Analysis of Social and Organizational Systems">CASOS</abbr> Technical Report 2023</p>
+            </div>
+            <div class="pub__links">
+              <a class="pub__link" href="http://reports-archive.adm.cs.cmu.edu/anon/anon/usr0/ftp/s3d2023/CMU-S3D-23-107.pdf" target="_blank" rel="noreferrer">Paper</a>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Jeongkeun Shin · Pittsburgh, PA</p>
+      <p>Last updated <time datetime="2026-11-13">November 13, 2026</time></p>
+    </footer>
+  </div>
+
+</body>
+</html>
